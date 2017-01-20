@@ -19,11 +19,11 @@ use HTTP::Request::Common qw(POST);
         my $msgtype="A";
         my $logfile="/var/log/pocsagd.log";
         my $beacon="DE RA1AIE HAM RADIO PAGING K";
-        my $server="express.dstar.su";
-        my $clientid="spb-page-kolpino";
+        my $server="test.qth.spb.ru";
+        my $clientid="page-test";
         my $pbeacon="DE RA1AIE HAM RADIO PAGING KOLPINO";
-        my $arbitrage="http://www.dstar.su/express/reserve.php";
-        my $call="RA1AIE-3";
+        my $arbitrage="http://test.qth.spb.ru/reserve.php";
+        my $call="RA1AIE-0";
         my $mqtt = new WebSphere::MQTT::Client(
           Hostname => $server,
           Port => 1883,
